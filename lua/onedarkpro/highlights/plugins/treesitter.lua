@@ -10,10 +10,10 @@ function M.groups(theme)
   -- https://github.com/nvim-treesitter/nvim-treesitter/blob/main/CONTRIBUTING.md#highlights
   return {
     -- Identifiers
-    ["@variable"] = { fg = theme.palette.red, style = config.styles.variables }, -- various variable names
+    ["@variable"] = { fg = theme.palette.fg, style = config.styles.variables }, -- various variable names
     ["@variable.builtin"] = { fg = theme.palette.yellow }, -- built-in variable names (e.g. `this`)
-    ["@variable.parameter"] = { fg = theme.palette.red, style = config.styles.parameters }, -- parameters of a function
-    ["@variable.member"] = { fg = theme.palette.red }, -- object and struct fields
+    ["@variable.parameter"] = { fg = theme.palette.fg, style = config.styles.parameters }, -- parameters of a function
+    ["@variable.member"] = { fg = theme.palette.fg }, -- object and struct fields
 
     ["@constant"] = { fg = theme.palette.orange, style = config.styles.constants }, -- constant identifiers
     ["@constant.builtin"] = { fg = theme.palette.purple, style = config.styles.constants }, -- built-in constant values
@@ -44,7 +44,7 @@ function M.groups(theme)
     ["@type.qualifier"] = { link = "@type" }, -- type qualifiers (e.g. `const`)
 
     ["@attribute"] = { fg = theme.palette.purple }, --attribute annotations (e.g. Python decorators)
-    ["@property"] = { fg = theme.palette.red }, -- similar to `@field`
+    ["@property"] = { fg = theme.palette.fg }, -- similar to `@field`
 
     -- Functions
     ["@function"] = { fg = theme.palette.blue, style = config.styles.functions }, -- function definitions

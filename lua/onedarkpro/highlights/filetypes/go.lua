@@ -14,10 +14,10 @@ function M.groups(theme)
     ["@operator.go"] = { fg = theme.palette.cyan, style = config.styles.operators },
     ["@type.go"] = { fg = theme.palette.yellow, style = config.styles.types },
     ["@type.builtin.go"] = { fg = theme.palette.purple, style = config.styles.types },
-    ["@field.go"] = { fg = theme.palette.red, style = config.styles.variables },
-    ["@property.go"] = { fg = theme.palette.red, style = config.styles.variables },
-    ["@variable.go"] = { fg = theme.palette.red, style = config.styles.variables },
-    ["@parameter.go"] = { fg = theme.palette.red, style = config.styles.parameters },
+    ["@field.go"] = { fg = theme.palette.fg, style = config.styles.variables },
+    ["@property.go"] = { fg = theme.palette.fg, style = config.styles.variables },
+    ["@variable.go"] = { fg = theme.palette.fg, style = config.styles.variables },
+    ["@parameter.go"] = { fg = theme.palette.fg, style = config.styles.parameters },
   }
 end
 
