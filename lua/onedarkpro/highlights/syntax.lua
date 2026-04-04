@@ -15,7 +15,7 @@ function M.groups(theme)
     Float = { fg = theme.palette.orange }, -- a floating point constant: 2.3e10
     Boolean = { fg = theme.palette.orange }, -- a boolean constant: TRUE, false
 
-    Identifier = { fg = theme.palette.red, style = config.styles.variables }, -- (preferred) any variable name
+    Identifier = { fg = theme.palette.fg, style = config.styles.variables }, -- (preferred) any variable name
     Function = { fg = theme.palette.blue, style = config.styles.functions }, -- function name (also: methods for classes)
 
     Statement = { fg = theme.palette.purple }, -- (preferred) any statement
